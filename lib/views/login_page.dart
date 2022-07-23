@@ -47,7 +47,7 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Text("Giriş Yapp",
+                  Text("Giriş Yap",
                       style: GoogleFonts.robotoSlab(
                           fontSize: 2 * Dimens.horizontalDimens + 10,
                           fontWeight: FontWeight.bold)),
