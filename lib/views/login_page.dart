@@ -14,10 +14,11 @@ class LoginPage extends StatelessWidget {
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
           decoration: BoxDecoration(
-            gradient: LinearGradient(
-                colors: [AppColors.loginBg1, AppColors.loginBg2, AppColors.loginBg3],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter),
+            gradient: LinearGradient(colors: [
+              AppColors.loginBg1,
+              AppColors.loginBg2,
+              AppColors.loginBg3
+            ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
           ),
           child: Padding(
             padding: const EdgeInsets.symmetric(
@@ -27,8 +28,8 @@ class LoginPage extends StatelessWidget {
             child: Column(
               children: [
                 Container(
-                  width: Dimens.horizontalDimens * 10,
-                  height: Dimens.horizontalDimens * 10,
+                  width: 10 * Dimens.horizontalDimens,
+                  height: 10 * Dimens.horizontalDimens,
                   decoration: BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage("assets/images/login_page_photo.png"),
@@ -36,10 +37,10 @@ class LoginPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                Text(
-                  "Giriş Yap",
-                  style: GoogleFonts.robotoSlab(fontSize:2*Dimens.horizontalDimens+10 ,fontWeight: FontWeight.bold)
-                ),
+                Text("Girebilirsiniz",
+                    style: GoogleFonts.robotoSlab(
+                        fontSize: 2 * Dimens.horizontalDimens + 10,
+                        fontWeight: FontWeight.bold)),
                 TextField(),
                 TextField(),
                 ElevatedButton(onPressed: () {}, child: Text("data"))
