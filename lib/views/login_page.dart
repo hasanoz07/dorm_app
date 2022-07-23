@@ -32,7 +32,7 @@ class LoginPage extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.symmetric(
                 horizontal: Dimens.horizontalDimens,
-                vertical: Dimens.verticalDimens+50,
+                vertical: Dimens.verticalDimens + 50,
               ),
               child: Column(
                 children: [
@@ -46,32 +46,28 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Text("Giriş Yap",
+                  Text("Giriniz",
                       style: GoogleFonts.robotoSlab(
                           fontSize: 2 * Dimens.horizontalDimens + 10,
                           fontWeight: FontWeight.bold)),
                   SizedBox(
                     height: 40,
                   ),
-                  textFieldApp.textFieldLogin("Kullanıcı Adı", false,_userNameController),
+                  textFieldApp.textFieldLogin(
+                      "Kullanıcı Adı", false, _userNameController),
                   SizedBox(
                     height: 15,
                   ),
-                  textFieldApp.textFieldLogin("Parola", true,_passwordController),
+                  textFieldApp.textFieldLogin(
+                      "Parola", true, _passwordController),
                   SizedBox(
                     height: 15,
                   ),
-                  button.loginButton((){
-                    
-                  }),
+                  button.loginButton(() {}),
                   SizedBox(
                     height: 15,
                   ),
-                  textButton.loginTextButton((){
-                    
-                      
-                    
-                  }),
+                  textButton.loginTextButton(() {}),
                 ],
               ),
             ),
@@ -80,6 +76,4 @@ class LoginPage extends StatelessWidget {
       ),
     );
   }
-
- 
 }
